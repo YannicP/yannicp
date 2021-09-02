@@ -49,4 +49,4 @@ Goal of this project was to gain insights into a certain product category by ana
 
 Before Analysis, the raw review have to be cleaned and transformed into a less noisy version. The Process taken was as follows:
 
-![alt text](https://github.com/YannicP/PersonalPortfolio/tree/gh-pages/images/preprocessing_diagram.png)
+![Diagram1](https://github.com/YannicP/PersonalPortfolio/tree/gh-pages/images/preprocessing_diagram.png?raw=True).
