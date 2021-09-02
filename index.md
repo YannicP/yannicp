@@ -5,7 +5,7 @@ This document gives some insights into some of my past projects, with a focus on
 ### Contents:
 You can click the project to jump straight to the section.
 
-1. [Project 1]#(p1_link) 
+1. [Project 1](#p1_link) 
 2. Project 2
 3. Project 3
 4. Project 4
@@ -43,7 +43,7 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
 
 
-<a name="p1_link"></a>
-# Project 1
+
+# <a name="p1_link"></a> Project 1
 
 lorem ipsum
