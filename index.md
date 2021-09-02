@@ -77,7 +77,7 @@ Through running the model, the probabilities *δ* and *ω* are generated. Thes p
 Through calculating metrics such as the Lift or using tf-idf, the topics can be named. The individual topics present in the reviews were identified as:
 
 The Top 10 words ranked for the individual topics by null-term lift were:
-![Diagram3](images/Amazon/wordsrankedbylift.png  | width=100)
+![Diagram3](images/Amazon/wordsrankedbylift.png){:height="50%" width="50%"}
 
 
 
