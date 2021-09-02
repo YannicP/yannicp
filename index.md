@@ -69,7 +69,9 @@ For *Latent Dirichlet Analysis (LDA)*, the number of topics *K* is critical. Nex
 
 ![Diagram3](images/Amazon/bayes_factor_dispersion.png)
 
+Through running the model, the probabilities *$\delta* and *$\omega* are generated. Thes probabilities indicate:
 
+- __$\delta__
 
 
 
