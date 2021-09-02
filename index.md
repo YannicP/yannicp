@@ -79,6 +79,18 @@ Through calculating metrics such as the Lift or using tf-idf, the topics can be 
 The Top 10 words ranked for the individual topics by null-term lift were:
 <img src="/images/Amazon/wordsrankedbylift.png" width="1000">
 
+Therefore, the 8 Topics:
+
+1. Overall satisfaction
+2. Gifting
+3. Noise cancellation
+4. Brand/Model
+5. Durability/Customer service
+6. Comfort
+7. Gaming performance
+8. Connectivity/Battery
+
+where derived.
 
 References:
 
