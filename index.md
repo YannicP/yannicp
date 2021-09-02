@@ -96,7 +96,7 @@ Therefore, the 8 Topics:
 where derived.
 
 #### Importance/Performance
-
+To assess importance of a topic, K bivariate Linear Regression models were fitted using the standardized __ω__ probabilites as the regressor, predicting the rating score of the review. Through standardization, the regression coefficients become comparable and can be used for the calculation of a topic importance score.
 References:
 
 [Bolukbasi et al. 2016] Tolga Bolukbasi and Kai-Wei Chang and James Zou and Venkatesh Saligrama and Adam Kalai. *Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings*. 2016
