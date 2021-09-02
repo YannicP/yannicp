@@ -1,14 +1,16 @@
 ## Yannic's Data Science Portfolio
 
-This document gives some insights into some of my past projects.
+This document gives some insights into some of my past projects, with a focus on variety.
 
 ### Contents:
+You can click the project to jump straight to the section.
 
-1.
-2.
-3.
-4.
-5.
+1. [Project 1]#(p1_link) 
+2. Project 2
+3. Project 3
+4. Project 4
+5. Project 5
+6. Project 6
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
@@ -39,3 +41,9 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+
+<a name="p1_link"></a>
+# Project 1
+
+lorem ipsum
