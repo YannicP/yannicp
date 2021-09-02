@@ -1,10 +1,14 @@
-## Welcome to GitHub Pages
+## Yannic's Data Science Portfolio
 
-You can use the [editor on GitHub](https://github.com/YannicP/PersonalPortfolio/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+This document gives some insights into some of my past projects.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Contents:
 
-### Markdown
+1.
+2.
+3.
+4.
+5.
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
