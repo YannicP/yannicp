@@ -69,11 +69,15 @@ For *Latent Dirichlet Analysis (LDA)*, the number of topics *K* is critical. Nex
 
 ![Diagram3](images/Amazon/bayes_factor_dispersion.png)
 
-Through running the model, the probabilities *$\delta* and *$\omega* are generated. Thes probabilities indicate:
+Through running the model, the probabilities *$\delta$* and *$\omega$* are generated. Thes probabilities indicate:
 
-- __$\delta__
+- __$\delta$__: Probability of a word belonging to a topic
+- __$\omega$__: Probability of a topic being present in a document
 
+Through calculating metrics such as the Lift or using tf-idf, the topics can be named. The individual topics present in the reviews were identified as:
 
+The Top 10 words ranked for the individual topics by null-term lift were:
+![Diagram3](images/Amazon/wordsrankedbylift.png)
 
 
 
