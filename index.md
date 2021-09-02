@@ -5,12 +5,11 @@ This document gives some insights into some of my past projects, with a focus on
 ### Contents:
 You can click the project to jump straight to the section.
 
-1. [Project 1](#p1_link) 
-2. Project 2
-3. Project 3
-4. Project 4
-5. Project 5
-6. Project 6
+1. [Analyzing Amazon Customer Reviews](#p1_link) *(R, text mining, Word2Vec, topic modeling, LDA)  
+2. [Project 2](#p2_link) 
+3. [Project 3](#p3_link) 
+4. [Project 4](#p4_link) 
+5. [Project 5](#p5_link) 
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
@@ -44,6 +43,10 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 
 
 
-# <a name="p1_link"></a> Project 1
+# <a name="p1_link"></a> Analyzing Amazon Customer Reviews
 
-lorem ipsum
+Goal of this project was to gain insights into a certain product category by analyzing reviews for respective products on Amazon. The Dataset was first filtered for heaphone reviews only. 
+
+Before Analysis, the raw review have to be cleaned and transformed into a less noisy version. The Process taken was as follows:
+
+![alt text](https://github.com/YannicP/PersonalPortfolio/tree/gh-pages/images/preprocessing_diagram.png?raw=true)
