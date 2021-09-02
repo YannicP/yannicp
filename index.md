@@ -61,7 +61,13 @@ Through word2vec, the brand position was analayzed. This is useful to identify p
 
 ![Diagram3](images/Amazon/brand_positioning.png)
 
+For example, Bose is more associated with instrumental, rock and pop music. This is important information and allows the brand to focus exactly these styles of music, improving the customer experience. It is also visible that customer group budget and premium brands, which seems natural.
 
+Finally, topic modeling is applied to analyze different topics for importance/performance. This way, brand strengths and weaknesses are identified, allowing for meaningful strategic decisions.
+
+For *Latent Dirichlet Analysis (LDA)*, the number of topics *K* is critical. Next to trial-and-error approaches, heuristics like *Bayes Factor* and *Dispersion* exist and are to be considered. From these heuristics, the optimal number of topics was set to *K=8*, as here, Dispersion and the logarithm of BayesFactor both started to converge as visible from the slopes below.
+
+![Diagram3](images/Amazon/bayes_factor_dispersion.png)
 
 
 
