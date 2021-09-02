@@ -78,7 +78,7 @@ Through calculating metrics such as the Lift or using tf-idf, the topics can be 
 
 The Top 10 words ranked for the individual topics by null-term lift were:
 ![Diagram4](/images/Amazon/wordsrankedbylift.png)
-
+<img src="/images/Amazon/wordsrankedbylift.png" width="300">
 
 
 References:
