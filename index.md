@@ -49,6 +49,10 @@ Goal of this project was to gain insights into a certain product category by ana
 
 Before Analysis, the raw review have to be cleaned and transformed into a less noisy version. The Process taken was as follows:
 
-![Diagram1](images/preprocessing_diagram.png)
+![Diagram1](images/Amazon/preprocessing_diagram.png)
 
+Afterwards, different Analysis approaches were taken. Exploratory Data Analysis and Topic Modeling were combined to identify potenital features to target in order to improve customer satisfaction.
 
+To get a fast view on the dataset, word clouds were created:
+
+![Diagram2](images/Amazon/ngrams.png)
