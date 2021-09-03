@@ -43,7 +43,7 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 
 
 
-# <a name="p1_link"></a> Analyzing Amazon Customer Reviews
+# <a name="p1_link"></a> Deriving Strategic Targets by Analyzing Amazon Customer Reviews
 
 Goal of this project was to gain insights into a certain product category by analyzing reviews for respective products on Amazon. The Dataset was first filtered for heaphone reviews only. 
 
