@@ -5,8 +5,8 @@ This document gives some insights into some of my past projects, with a focus on
 ### Contents:
 You can click the project to jump straight to the section.
 
-1. [Deriving Strategic Targets by Analyzing Amazon Customer Reviews](#p1_link) *(R, text mining, Word2Vec, topic modeling, LDA)  
-2. [Project 2](#p2_link) 
+1. [Deriving Strategic Targets by Analyzing Amazon Customer Reviews](#p1_link) (R, text mining, Word2Vec, topic modeling, LDA)  
+2. [Using Computer Vision and Machine Learning to Identify Material Defects](#p2_link) (Matlab, Image Transformations, CNN, Transfer Learning, One-Class-SVM)
 3. [Project 3](#p3_link) 
 4. [Project 4](#p4_link) 
 5. [Project 5](#p5_link) 
@@ -118,6 +118,15 @@ From this, different strategic targets for *Bose* can be derived:
 - Battery Life and comfort are not driving ratings very much based on the regression coefficients. However, the are mentioned more likely in reviews that have only average ratings, therefore the headphones could likely be improved in this regard. 
 
 More insights were generated, however, for readability and consiseness, these results are omitted here.
+
+# <a name="p1_link"></a> Using Computer Vision and Machine Learning to Identify Material Defects
+This project is an excerpt from my bachelor thesis. Therefore, no completely comprehensive overview is given.
+The goal was the identification of material defects under specific conditions:
+
+- only little data is available, as defect detection should be carried out for small production series. During processing, the camera takes more pictures and therefore generates additional data. However, defect detection should be possible right from the start (first few images). This poses a significant challenge.
+- deffect detection has to be fast, as online defect detection should be possible. Therefore no extremely complex calculations can be carried out
+
+Under these constraints, classical machine learning approaches are not useful, as CNN's need relatively large amounts of data. To combat this problem, a hybrid approach was taken, using classic computer vision techniques for early defect detection and supplementing this with transfer learning based one class support vector classification later
 
 References:
 
