@@ -80,7 +80,8 @@ Through running the model, the probabilities *δ* and *ω* are generated. Thes p
 Through calculating metrics such as the Lift or using tf-idf, the topics can be named. The individual topics present in the reviews were identified as:
 
 The Top 10 words ranked for the individual topics by null-term lift were:
-<img src="/images/Amazon/wordsrankedbylift.png" width="1000">
+
+![Diagram5](images/Amazon/wordsrankedbylift.png){:height="80%" width="80%"}
 
 Therefore, the 8 Topics:
 
@@ -98,12 +99,12 @@ where derived.
 #### Importance/Performance
 To assess importance of a topic, K bivariate Linear Regression models were fitted using the standardized __ω__ probabilites as the regressor, predicting the rating score of the review. Through standardization, the regression coefficients become comparable and can be used for the calculation of a topic importance score. Performance was measured by weighing the rating of each review by the probability of the topic appearing in the respective document.
 
-<img src="/images/Amazon/impeq.png" width="300">
-<img src="/images/Amazon/perfeq.png" width="300">
+![Diagram5](images/Amazon/impeq.png){:height="80%" width="80%"}
+![Diagram6](images/Amazon/perfeq.png){:height="80%" width="80%"}
 
 Performance (x-Axis) was plotted against Importance (y-Axis). The diagram is shown below.
 
-![Diagram3](images/Amazon/imperf.png){:height="50%" width="50%"}
+![Diagram7](images/Amazon/imperf.png){:height="80%" width="80%"}
 
 References:
 
