@@ -103,7 +103,7 @@ To assess importance of a topic, K bivariate Linear Regression models were fitte
 
 Performance (x-Axis) was plotted against Importance (y-Axis). The diagram is shown below.
 
-![Diagram3](images/Amazon/imperf.png)
+![Diagram3](images/Amazon/imperf.png){:height="50%" width="50%"}
 
 References:
 
