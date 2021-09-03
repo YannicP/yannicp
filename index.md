@@ -99,8 +99,8 @@ where derived.
 #### Importance/Performance
 To assess importance of a topic, K bivariate Linear Regression models were fitted using the standardized __ω__ probabilites as the regressor, predicting the rating score of the review. Through standardization, the regression coefficients become comparable and can be used for the calculation of a topic importance score. Performance was measured by weighing the rating of each review by the probability of the topic appearing in the respective document.
 
-![Diagram5](images/Amazon/impeq.png){:height="80%" width="60%"}
-![Diagram6](images/Amazon/perfeq.png){:height="80%" width="60%"}
+![Diagram5](images/Amazon/impeq.png){:height="80%" width="30%"}
+![Diagram6](images/Amazon/perfeq.png){:height="80%" width="30%"}
 
 Performance (x-Axis) was plotted against Importance (y-Axis). The diagram is shown below.
 
