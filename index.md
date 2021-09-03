@@ -5,7 +5,7 @@ This document gives some insights into some of my past projects, with a focus on
 ### Contents:
 You can click the project to jump straight to the section.
 
-1. [Analyzing Amazon Customer Reviews](#p1_link) *(R, text mining, Word2Vec, topic modeling, LDA)  
+1. [Deriving Strategic Targets by Analyzing Amazon Customer Reviews](#p1_link) *(R, text mining, Word2Vec, topic modeling, LDA)  
 2. [Project 2](#p2_link) 
 3. [Project 3](#p3_link) 
 4. [Project 4](#p4_link) 
