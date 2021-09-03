@@ -106,11 +106,18 @@ To assess importance of a topic, K bivariate Linear Regression models were fitte
 ![Diagram6](images/Amazon/perfeq.png){:height="80%" width="30%"}
 {: refdef}
 
-Performance (x-Axis) was plotted against Importance (y-Axis). The diagram is shown below.
+Performance (x-Axis) was plotted against Importance (y-Axis) for the brand *Bose*. The diagram is shown below.
 
 {:refdef: style="text-align: center;"}
 ![Diagram7](images/Amazon/imperf.png){:height="80%" width="80%"}
 {: refdef}
+
+From this, different strategic targets for *Bose* can be derived:
+- Durability and customer support are possible targets for strategic priorization. However, there is likely some bias involved, as unsatisfied customers are more likely to write reviews. Additionally, some of the reviews likely refer to the retailers (Amazon) customer service.
+- Gaming seems to be a potential target. Improvements in regard to the headphones gaming performance could drive customer satisfaction
+- Battery Life and comfort are not driving ratings very much based on the regression coefficients. However, the are mentioned more likely in reviews that have only average ratings, therefore the headphones could likely be improved in this regard. 
+
+More insights were generated, however, for readability and consiseness, these results are omitted here.
 
 References:
 
