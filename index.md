@@ -128,6 +128,10 @@ The goal was the identification of material defects under specific conditions:
 
 Under these constraints, classical machine learning approaches are not useful, as CNN's need relatively large amounts of data. To combat this problem, a hybrid approach was taken, using classic computer vision techniques for early defect detection and supplementing this with transfer learning based one class support vector classification later
 
+#### Image Acquisition
+
+![Diagram3](images/DefectDetection/camera_params.png)
+
 References:
 
 [Bolukbasi et al. 2016] Tolga Bolukbasi and Kai-Wei Chang and James Zou and Venkatesh Saligrama and Adam Kalai. *Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings*. 2016
