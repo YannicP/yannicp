@@ -101,6 +101,10 @@ To assess importance of a topic, K bivariate Linear Regression models were fitte
 <img src="/images/Amazon/impeq.png" width="300">
 <img src="/images/Amazon/perfeq.png" width="300">
 
+Performance (x-Axis) was plotted against Importance (y-Axis). The diagram is shown below.
+
+![Diagram3](images/Amazon/imperf.png)
+
 References:
 
 [Bolukbasi et al. 2016] Tolga Bolukbasi and Kai-Wei Chang and James Zou and Venkatesh Saligrama and Adam Kalai. *Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings*. 2016
