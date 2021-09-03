@@ -130,6 +130,8 @@ Under these constraints, classical machine learning approaches are not useful, a
 
 #### Image Acquisition
 
+The first step in camera based defect detection is image acquisition. Here, an iDS Industry Camera was used. As Edge detection is crucial for detecting surface defects, the right camera parameters are needed when taking pictures. Below, the influence of falsely configured focus (left), low exposure (middle) and correctly configured parameters (right) are shown. It is visible that the edge with the surface defect is only visible in the transformed edge image if the correct parameters are used.
+
 ![Diagram3](images/DefectDetection/camera_params.png)
 
 References:
