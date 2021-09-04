@@ -156,6 +156,12 @@ For detecting surface defects, a single reference image on an intact workpiece i
 
 ![Diagram3](images/DefectDetection/detected_defects.png)
 
+#### Hybrid Approach: Adding Deep Learning
+
+Sometimes, the same workpiece is processed multiple times. If enough data accumulates, an ensemble approach combining machine learning with the established computer vision based approach may prove to be superior. Here, I used a combination of Transfer Learning and a One-Class-Support-Vector-Machine to flag images that fall out of the norm.
+
+![Diagram3](images/DefectDetection/mldefects.png)
+ 
 References:
 
 [Bolukbasi et al. 2016] Tolga Bolukbasi and Kai-Wei Chang and James Zou and Venkatesh Saligrama and Adam Kalai. *Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings*. 2016
