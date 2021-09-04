@@ -158,9 +158,13 @@ For detecting surface defects, a single reference image on an intact workpiece i
 
 #### Hybrid Approach: Adding Deep Learning
 
-Sometimes, the same workpiece is processed multiple times. If enough data accumulates, an ensemble approach combining machine learning with the established computer vision based approach may prove to be superior. Here, I used a combination of Transfer Learning and a One-Class-Support-Vector-Machine to flag images that fall out of the norm.
+Sometimes, the same workpiece is processed multiple times. If enough data accumulates, an ensemble approach combining machine learning with the established computer vision based approach may prove to be superior. Here, I used a combination of Transfer Learning and a One-Class-Support-Vector-Machine to flag images that fall out of the norm. To reduce complexity, PCA was introduced between the Neural Network output and the SVM. Input to Alexnet were the inverted edge images of the individual workpieces up to the current run.
 
 ![Diagram3](images/DefectDetection/mldefects.png)
+
+ Using the edge images as inpput proved superior when the data set was still relatively small. The comparison for using edge images as input vs. using the raw images of the workpieces is shown in the graphs below. Relatively recall was achieved, meaning that most anomalies are found, while precision was still comparatively high, leading to reduced rejects of intact workpieces.
+ 
+ ![Diagram3](images/DefectDetection/resultsml.png)
  
 References:
 
