@@ -142,6 +142,9 @@ This helps to remove any image noise or dirt/metal outside the workpieces contou
 
 ![Diagram3](images/DefectDetection/segmented.png)
 
+Often, there are slight variations in object position during machine operations, which is why for every repetition, the workpiece position is tracked by the bounding box and corrected accordingly. If deviation from the "normal" bounding box is too large, a message is shown to the user so that workpiece position can be corrected.
+
+![Diagram3](images/DefectDetection/learned_bounding_box.png)
 References:
 
 [Bolukbasi et al. 2016] Tolga Bolukbasi and Kai-Wei Chang and James Zou and Venkatesh Saligrama and Adam Kalai. *Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings*. 2016
