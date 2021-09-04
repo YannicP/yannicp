@@ -172,6 +172,9 @@ Sometimes, the same workpiece is processed multiple times. If enough data accumu
  
  This is a project I did for fun a few years age: I wanted to use a custom neural network to solve the infamous Kaggle Titanic challenge. The full jupyter notebook is available at [Kaggle Titanic challenge using Tensorflow](https://github.com/YannicP/MachineLearning/blob/master/KaggleTitanic/titanic_survival.ipynb)
  
+The dataset consists of the records for individual passengers of the titanic and their survival status, found in the respective column.
+![Diagram3](images/DefectDetection/data_table_titanic.png)
+ 
  The Neural Networks structure is as follows:
  1. Input Layer: droput rate 0.2
  2. Hidden Layer 1: ELU activation, L2 regularization (λ = 0.01), dropout rate 0.5 & batch normalization
