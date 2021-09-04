@@ -166,6 +166,8 @@ Sometimes, the same workpiece is processed multiple times. If enough data accumu
  
  ![Diagram3](images/DefectDetection/resultsml.png)
  
+ Through combining the early, computer vision based defect detection with the machine learning based approach, the detection is able to flag damaged parts in small series production and improve through machine learning if series become larger-
+ 
 References:
 
 [Bolukbasi et al. 2016] Tolga Bolukbasi and Kai-Wei Chang and James Zou and Venkatesh Saligrama and Adam Kalai. *Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings*. 2016
