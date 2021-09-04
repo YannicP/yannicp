@@ -119,7 +119,7 @@ From this, different strategic targets for *Bose* can be derived:
 
 More insights were generated, however, for readability and consiseness, these results are omitted here.
 
-# <a name="p1_link"></a> Using Computer Vision and Machine Learning to Identify Material Defects
+# <a name="p2_link"></a> Using Computer Vision and Machine Learning to Identify Material Defects
 This project is an excerpt from my bachelor thesis. Therefore, no completely comprehensive overview is given.
 The goal was the identification of material defects under specific conditions:
 
