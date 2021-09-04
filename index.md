@@ -173,8 +173,17 @@ Sometimes, the same workpiece is processed multiple times. If enough data accumu
  This is a project I did for fun a few years age: I wanted to use a custom neural network to solve the infamous Kaggle Titanic challenge. The full jupyter notebook is available at [Kaggle Titanic challenge using Tensorflow](https://github.com/YannicP/MachineLearning/blob/master/KaggleTitanic/titanic_survival.ipynb)
  
 The dataset consists of the records for individual passengers of the titanic and their survival status, found in the respective column.
-![Diagram3](images/DefectDetection/data_table_titanic.png)
+![Diagram3](images/Titanic/data_table_titanic.png)
  
+Before the model can be applied, feature engineering and feature selection were performed. To get an idea what score is acceptable, a logistic regression classifier as well as a random forest classifier were trained using the respective scikit-learn functions.
+
+Some very basic data exploration reveals a few interesting insights:
+
+![Diagram3](images/Titanic/titanicexplore.png)
+
+- Women were a lot more likely to survive, and so were kids. It seems like women and children were indeed evacuated with priority.
+- people that payd more, and were passengers in a higher class were more likely to survive.
+
  The Neural Networks structure is as follows:
  1. Input Layer: droput rate 0.2
  2. Hidden Layer 1: ELU activation, L2 regularization (λ = 0.01), dropout rate 0.5 & batch normalization
