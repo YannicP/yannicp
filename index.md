@@ -138,6 +138,10 @@ Afterwards, the image taken is transformed multiple times:
 
 ![Diagram3](images/DefectDetection/SegmentationApproach.png)
 
+This helps to remove any image noise or dirt/metal outside the workpieces contour that would otherwise interfere with defect detection, as this is common especially during processes like milling. The goal of the segmentation is to use the resulting mask to select the relevant image regions only. The resulting segmentation mask of a simple workpiece along with the steps taken to generate it is shown below.
+
+![Diagram3](images/DefectDetection/segmented.png)
+
 References:
 
 [Bolukbasi et al. 2016] Tolga Bolukbasi and Kai-Wei Chang and James Zou and Venkatesh Saligrama and Adam Kalai. *Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings*. 2016
