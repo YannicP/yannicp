@@ -134,6 +134,10 @@ The first step in camera based defect detection is image acquisition. Here, an i
 
 ![Diagram3](images/DefectDetection/camera_params.png)
 
+Afterwards, the image taken is transformed multiple times:
+
+![Diagram3](images/DefectDetection/SegmentationApproach.png)
+
 References:
 
 [Bolukbasi et al. 2016] Tolga Bolukbasi and Kai-Wei Chang and James Zou and Venkatesh Saligrama and Adam Kalai. *Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings*. 2016
