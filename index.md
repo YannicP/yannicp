@@ -173,6 +173,7 @@ Sometimes, the same workpiece is processed multiple times. If enough data accumu
  This is a project I did for fun a few years age: I wanted to use a custom neural network to solve the infamous Kaggle Titanic challenge. The full jupyter notebook is available at [Kaggle Titanic challenge using Tensorflow](https://github.com/YannicP/MachineLearning/blob/master/KaggleTitanic/titanic_survival.ipynb)
  
 The dataset consists of the records for individual passengers of the titanic and their survival status, found in the respective column.
+
 ![Diagram3](images/Titanic/data_table_titanic.png)
  
 Before the model can be applied, feature engineering and feature selection were performed. To get an idea what score is acceptable, a logistic regression classifier as well as a random forest classifier were trained using the respective scikit-learn functions.
