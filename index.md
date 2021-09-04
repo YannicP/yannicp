@@ -134,6 +134,8 @@ The first step in camera based defect detection is image acquisition. Here, an i
 
 ![Diagram3](images/DefectDetection/camera_params.png)
 
+#### Segmentation
+
 Afterwards, the image taken is transformed multiple times:
 
 ![Diagram3](images/DefectDetection/SegmentationApproach.png)
@@ -141,6 +143,8 @@ Afterwards, the image taken is transformed multiple times:
 This helps to remove any image noise or dirt/metal outside the workpieces contour that would otherwise interfere with defect detection, as this is common especially during processes like milling. The goal of the segmentation is to use the resulting mask to select the relevant image regions only. The resulting segmentation mask of a simple workpiece along with the steps taken to generate it is shown below.
 
 ![Diagram3](images/DefectDetection/segmented.png)
+
+#### Positional Correction & Anomaly Detection
 
 Often, there are slight variations in object position during machine operations, which is why for every repetition, the workpiece position is tracked by the bounding box and corrected accordingly. If deviation from the "normal" bounding box is too large, a message is shown to the user so that workpiece position can be corrected.
 
