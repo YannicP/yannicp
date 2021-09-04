@@ -174,8 +174,8 @@ Sometimes, the same workpiece is processed multiple times. If enough data accumu
  
  The Neural Networks structure is as follows:
  1. Input Layer: droput rate 0.2
- 2. Hidden Layer 1: L2 regularization (λ = 0.01), dropout rate 0.5 & batch normalization
- 3. Hidden Layer 2: L2 regularization (λ = 0.01), dropout rate 0.15 & batch normalization
+ 2. Hidden Layer 1: ELU activation, L2 regularization (λ = 0.01), dropout rate 0.5 & batch normalization
+ 3. Hidden Layer 2: ELU activation, L2 regularization (λ = 0.01), dropout rate 0.15 & batch normalization
 
 For initialization, xavier initialization was used.
 The tensorflow code creating the model is shown below.
