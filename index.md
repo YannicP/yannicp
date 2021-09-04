@@ -173,6 +173,12 @@ Sometimes, the same workpiece is processed multiple times. If enough data accumu
  This is a project I did for fun a few years age: I wanted to use a custom neural network to solve the infamous Kaggle Titanic challenge. The full jupyter notebook is available at: (https://github.com/YannicP/MachineLearning/blob/master/KaggleTitanic/titanic_survival.ipynb)
  
  The Neural Networks structure is as follows:
+ 1. Input Layer: droput rate 0.2
+ 2. Hidden Layer 1: L2 regularization (λ = 0.01), dropout rate 0.5 & batch normalization
+ 3. Hidden Layer 2: L2 regularization (λ = 0.01), dropout rate 0.15 & batch normalization
+
+For initialization, xavier initialization was used.
+ 
  ```
  with tf.name_scope("neural_network"):
     xavier_init = tf.contrib.layers.xavier_initializer()
