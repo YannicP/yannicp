@@ -172,6 +172,25 @@ Sometimes, the same workpiece is processed multiple times. If enough data accumu
  
  This is a project I did for fun a few years age: I wanted to use a custom neural network to solve the infamous Kaggle Titanic challenge. The full jupyter notebook is available at: (https://github.com/YannicP/MachineLearning/blob/master/KaggleTitanic/titanic_survival.ipynb)
  
+ The Neural Networks structure is as follows:
+ ```
+ with tf.name_scope("neural_network"):
+    xavier_init = tf.contrib.layers.xavier_initializer()
+    
+    X_drop = tf.layers.dropout(X, dropout_rate_0, training=training)
+    
+    hidden_1 = tf.layers.dense(X_drop, n_hidden_1, kernel_regularizer=tf.contrib.layers.l2_regularizer(0.01), kernel_initializer=xavier_init, name="hidden_1")
+    bn1 = tf.layers.batch_normalization(hidden_1, training=training, momentum=0.9)
+    bn1_act = tf.nn.elu(bn1)
+    hidden_1_drop = tf.layers.dropout(bn1_act, dropout_rate_1, training=training)
+    
+    hidden_2 = tf.layers.dense(hidden_1_drop, n_hidden_2, kernel_regularizer=tf.contrib.layers.l2_regularizer(0.01), kernel_initializer=xavier_init, name="hidden_2")
+    bn2 = tf.layers.batch_normalization(hidden_2, training=training, momentum=0.9)
+    bn2_act = tf.nn.elu(bn2)
+    hidden_2_drop = tf.layers.dropout(bn2_act, dropout_rate_2, training=training)
+    
+    logits = tf.layers.dense(hidden_2_drop, n_outputs, kernel_initializer=xavier_init, name="outputs")
+ ```
 References:
 
 [Bolukbasi et al. 2016] Tolga Bolukbasi and Kai-Wei Chang and James Zou and Venkatesh Saligrama and Adam Kalai. *Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings*. 2016
