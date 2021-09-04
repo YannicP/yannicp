@@ -166,11 +166,11 @@ Sometimes, the same workpiece is processed multiple times. If enough data accumu
  
  ![Diagram3](images/DefectDetection/resultsml.png)
  
- Through combining the early, computer vision based defect detection with the machine learning based approach, the detection is able to flag damaged parts in small series production and improve through machine learning if series become larger-
+ Through combining the early, computer vision based defect detection with the machine learning based approach, the detection is able to flag damaged parts in small series production and improve through machine learning if series become larger.
  
- # <a name="p3_link"></a> Solving the Kaggle Titanic Challenge using Tensorflow
+# <a name="p3_link"></a> Solving the Kaggle Titanic Challenge using Tensorflow
  
- This is a project I did for fun a few years age: I wanted to use a custom neural network to solve the infamous Kaggle Titanic challenge. The full jupyter notebook is available at: (https://github.com/YannicP/MachineLearning/blob/master/KaggleTitanic/titanic_survival.ipynb)
+ This is a project I did for fun a few years age: I wanted to use a custom neural network to solve the infamous Kaggle Titanic challenge. The full jupyter notebook is available at [Kaggle Titanic challenge using Tensorflow](https://github.com/YannicP/MachineLearning/blob/master/KaggleTitanic/titanic_survival.ipynb)
  
  The Neural Networks structure is as follows:
  1. Input Layer: droput rate 0.2
@@ -178,7 +178,7 @@ Sometimes, the same workpiece is processed multiple times. If enough data accumu
  3. Hidden Layer 2: L2 regularization (λ = 0.01), dropout rate 0.15 & batch normalization
 
 For initialization, xavier initialization was used.
- 
+The tensorflow code creating the model is shown below.
  ```
  with tf.name_scope("neural_network"):
     xavier_init = tf.contrib.layers.xavier_initializer()
