@@ -149,6 +149,13 @@ This helps to remove any image noise or dirt/metal outside the workpieces contou
 Often, there are slight variations in object position during machine operations, which is why for every repetition, the workpiece position is tracked by the bounding box and corrected accordingly. If deviation from the "normal" bounding box is too large, a message is shown to the user so that workpiece position can be corrected.
 
 ![Diagram3](images/DefectDetection/learned_bounding_box.png)
+
+#### Defect Detection & Localization
+
+For detecting surface defects, a single reference image on an intact workpiece is needed. Afterwards, the algorithm checks for surface defects using the difference betweeen the edge images. As long as the first process did not produce any surface defects, this approach allows for the detection beginning in the second iteration and is therefore usable for small production series. Below, the defect detection is shown.
+
+![Diagram3](images/DefectDetection/detected_defects.png)
+
 References:
 
 [Bolukbasi et al. 2016] Tolga Bolukbasi and Kai-Wei Chang and James Zou and Venkatesh Saligrama and Adam Kalai. *Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings*. 2016
