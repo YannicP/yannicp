@@ -320,6 +320,6 @@ You can have a look at the jupyter notebooks for some of my oldest personal Proj
 - [Analyzing American SAT scores](https://github.com/YannicP/OldNotebooks/blob/master/sat_analysis_yp.ipynb)
 - [Setting up Fundamental Analysis for the S&P500](https://github.com/YannicP/OldNotebooks/blob/master/sp500analysis.ipynb)
 
-References:
+# References:
 
 [Bolukbasi et al. 2016] Tolga Bolukbasi and Kai-Wei Chang and James Zou and Venkatesh Saligrama and Adam Kalai. *Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings*. 2016
