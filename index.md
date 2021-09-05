@@ -8,7 +8,7 @@ You can click the project to jump straight to the section.
 1. [Deriving Strategic Targets by Analyzing Amazon Customer Reviews](#p1_link) (R, text mining, Word2Vec, topic modeling, LDA)  
 2. [Using Computer Vision and Machine Learning to Identify Material Defects](#p2_link) (Matlab, Image Transformations, CNN, Transfer Learning, One-Class-SVM)
 3. [Solving the Kaggle Titanic Challenge using Tensorflow](#p3_link) (Python, Neural Networks, Tensorflow, Cross Validation)
-4. [Project 4](#p4_link) 
+4. [Predicting Sales from Time Series Data with Autoregressive Models](#p4_link) (R, Time Series Analysis, ARIMA, Vector Autoregressive Models)
 5. [Project 5](#p5_link) 
 
 
@@ -179,6 +179,13 @@ The tensorflow code creating the model is shown below.
     
     logits = tf.layers.dense(hidden_2_drop, n_outputs, kernel_initializer=xavier_init, name="outputs")
  ```
+ 
+ # <a name="p4_link"></a> Predicting Sales from Time Series Data with Autoregressive Models
+ 
+ This project deals with forecasting sales for an internet startup based on a given time series. The time series is shown in the following diagram:
+ 
+ ![Diagram](images/SalesPrediction/salespermonth.png)
+ 
 References:
 
 [Bolukbasi et al. 2016] Tolga Bolukbasi and Kai-Wei Chang and James Zou and Venkatesh Saligrama and Adam Kalai. *Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings*. 2016
