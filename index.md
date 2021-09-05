@@ -180,7 +180,7 @@ The tensorflow code creating the model is shown below.
     logits = tf.layers.dense(hidden_2_drop, n_outputs, kernel_initializer=xavier_init, name="outputs")
  ```
  
- # <a name="p4_link"></a> Predicting Sales from Time Series Data with Autoregressive Models
+# <a name="p4_link"></a> Predicting Sales from Time Series Data with Autoregressive Models
  
  This project deals with forecasting sales for an internet startup based on a given time series. The time series is shown in the following diagram:
  
