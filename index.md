@@ -315,7 +315,7 @@ This shows that using regularization, dropout, batch normalization and a relativ
 # <a name="p5_link"></a> More to Come + Further Links
 This page is still Work in Progress as of 05/09/2021. I will be adding other Projects soon.
 
-You can have a look at some of my oldest personal Projects I did for practice or fun (that I may or may not have finished):
+You can have a look at the jupyter notebooks for some of my oldest personal Projects I did for practice or fun (that I may or may not have finished):
 - [Answering Business questions using python and SQLite](https://github.com/YannicP/OldNotebooks/blob/master/chinook_analysis.ipynb)
 - [Analyzing American SAT scores](https://github.com/YannicP/OldNotebooks/blob/master/sat_analysis_yp.ipynb)
 - [Setting up Fundamental Analysis for the S&P500](https://github.com/YannicP/OldNotebooks/blob/master/sp500analysis.ipynb)
