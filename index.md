@@ -210,6 +210,8 @@ Some very basic data exploration reveals a few interesting insights:
 - Women were a lot more likely to survive, and so were kids. It seems like women and children were indeed evacuated with priority.
 - people that payd more, and were passengers in a higher class were more likely to survive.
 
+For feature engineering and -selection, please refer to the linked [notebook](https://github.com/YannicP/MachineLearning/blob/master/KaggleTitanic/titanic_survival.ipynb)
+
 #### Setting up and training a heaviliy regularized Neural Network
 Neural Networks have the disadvantage of overfitting if no countermeasures are taken. Especially when little data is present (as is the case here), they tend to follow the training data too closely, making overfitting a daunting challeng. To combat this, there are various techniques available:
 
