@@ -285,7 +285,18 @@ with tf.name_scope("train"):
  
  Training on ten folds yields the following accuracies:
  
- 
+ | Fold  | Training Loss | Validation Loss|
+| ------------- | ------------- | ------------- |
+| 1  | 0.845 | 0.833 |
+| 2  | 0.843 | 0.88 |
+| 3  | 0.849 | 0.78 |
+| 4  | 0.838 | 0.844 |
+| 5  | 0.851 | 0.844 |
+| 6  | 0.844 | 0.833 |
+| 7  | 0.843 | 0.81 |
+| 8  | 0.839 | 0.833 |
+| 9  | 0.83 | 0.889 |
+| 10  | 0.846 | 0.863 |
 
 References:
 
