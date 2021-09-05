@@ -210,6 +210,8 @@ Some very basic data exploration reveals a few interesting insights:
 - Women were a lot more likely to survive, and so were kids. It seems like women and children were indeed evacuated with priority.
 - people that payd more, and were passengers in a higher class were more likely to survive.
 
+#### Setting up and training a heaviliy regularized Neural Network
+
 The Neural Networks structure is as follows:
 1. Input Layer: droput rate 0.2
 2. Hidden Layer 1: ELU activation, L2 regularization (λ = 0.01), dropout rate 0.5 & batch normalization
