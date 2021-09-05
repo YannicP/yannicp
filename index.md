@@ -298,6 +298,8 @@ with tf.name_scope("train"):
 | 9  | 0.83 | 0.889 |
 | 10  | 0.846 | 0.863 |
 
+This shows that using regularization, dropout, batch normalization and a relatively shallow structure with only two hidden layers allowed the network to generalize pretty well. Even tough neural networks are not necessarily optimal for this kind of task, a heavy regularized network allows for good predictions, as the model scored roughly in the 95th percentile of all models (in 2018).
+
 References:
 
 [Bolukbasi et al. 2016] Tolga Bolukbasi and Kai-Wei Chang and James Zou and Venkatesh Saligrama and Adam Kalai. *Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings*. 2016
