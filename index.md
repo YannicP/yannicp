@@ -290,7 +290,7 @@ with tf.name_scope("train"):
     training_op = optimizer.minimize(loss)
  ```
  
- #### Evaluation using 10-fold cross validation
+#### Evaluation using 10-fold cross validation
  
 To test for generalizability, 10-fold cross validation was implemented. This has the advantage that all of the data available can be used for training afterwards and no skew due to the selection of a specific test set is introduced ( no overfitting the test set)
  Training on ten folds yields the following accuracies:
