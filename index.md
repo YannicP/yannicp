@@ -235,6 +235,21 @@ The tensorflow code creating the model is shown below.
     
     logits = tf.layers.dense(hidden_2_drop, n_outputs, kernel_initializer=xavier_init, name="outputs")
  ```
+ The loss funtion used is basig cross entropy, while training is carried out using adaptive moment estimation:
+ 
+ ```
+ with tf.name_scope("loss"):
+    xentropy = tf.nn.sigmoid_cross_entropy_with_logits(labels=y, logits=logits)
+    loss = tf.reduce_mean(xentropy, name="loss") + tf.losses.get_regularization_loss()
+    
+    
+with tf.name_scope("train"):
+    optimizer = tf.train.AdamOptimizer(learning_rate=learning_rate)
+    training_op = optimizer.minimize(loss)
+ ```
+ 
+ Training on ten folds yields the following accuracies:
+ 
  
 
 References:
