@@ -9,7 +9,7 @@ You can click the project to jump straight to the section.
 2. [Using Computer Vision and Machine Learning to Identify Material Defects](#p2_link) (Matlab, Image Transformations, CNN, Transfer Learning, One-Class-SVM)
 3. [Predicting Sales from Time Series Data with Autoregressive Models](#p3_link) (R, Time Series Analysis, ARIMA, Grid Search)
 4. [Solving the Kaggle Titanic Challenge using Tensorflow](#p4_link) (Python, Neural Networks, Tensorflow, Cross Validation)
-5. [Project 5](#p5_link) 
+5. [More to come + Further Links](#p5_link) 
 
 
 # <a name="p1_link"></a> Deriving Strategic Targets by Analyzing Amazon Customer Reviews
@@ -311,6 +311,14 @@ To test for generalizability, 10-fold cross validation was implemented. This has
 | 10  | 0.846 | 0.863 |
 
 This shows that using regularization, dropout, batch normalization and a relatively shallow structure with only two hidden layers allowed the network to generalize pretty well. Even tough neural networks are not necessarily optimal for this kind of task, a heavy regularized network allows for good predictions, as the model scored roughly in the 95th percentile of all models (in 2018).
+
+# <a name="p5_link"></a> More to Come + Further Links
+This page is still Work in Progress as of 05/09/2021. I will be adding other Projects soon.
+
+You can have a look at some of my oldest personal Projects I did for practice or fun (that I may or may not have finished):
+- [Answering Business questions using python and SQLite](https://github.com/YannicP/OldNotebooks/blob/master/chinook_analysis.ipynb)
+- [Analyzing American SAT scores](https://github.com/YannicP/OldNotebooks/blob/master/sat_analysis_yp.ipynb)
+- [Setting up Fundamental Analysis for the S&P500](https://github.com/YannicP/OldNotebooks/blob/master/sp500analysis.ipynb)
 
 References:
 
