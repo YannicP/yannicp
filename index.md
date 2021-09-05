@@ -203,6 +203,16 @@ The data is still not stationary, as there is a trend present (this can also be 
 Following this, the seasonal component is remaining. Taking seasonal differences (with lag=12) is one way to remove this effect. The result (and final stationary time series) looks like this:
 
 ![Diagram](images/SalesPrediction/seasonalcorrf.png)
+
+
+#### Using (S)ARIMA to Model Sales
+
+With a stationary time series being present, the next step is the creation of a forecasting model. Commonly, autoregressive models are used for this task.
+The creation of a ARIMA (Auto-Regressive Integrated Moving Average) model requires the selection of specific parameters *p* and *q* that tell it how many autoregressive lags (correlation with previous values) and moving average lags (correlation of the error terms) should be taken into account.
+
+This parameter selection can be achieved by taking a look at the ACF and PACF funtions for the time series:
+
+![Diagram](images/SalesPrediction/acf_pacf.png)
  
 References:
 
