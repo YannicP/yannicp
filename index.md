@@ -184,7 +184,7 @@ The tensorflow code creating the model is shown below.
  
  This project deals with forecasting sales for an internet startup based on a given time series. The time series is shown in the following diagram:
  
- ![Diagram](images/SalesPrediction/salespermonth.png)
+ ![Diagram](images/SalesPrediction/monthlysales.png)
  
  It is clearly visible that the companies sales are clearly dependent on the season 
  
