@@ -225,6 +225,11 @@ Setting up the model with these parameters yield the respective coefficients tha
 Using the model, predictions can be made for the sales: Here, only one year is used for training, while the rest of the timeframe acts as a test set:
 
 ![Diagram](images/SalesPrediction/arima_preds.png)
+
+To support the chosen parameters, a grid search was run, using the values from the year 2006-2011 as training set, predicting the values for the year 2012.
+The parameter combinations and the respective RMSE values (This time for the log transformed sales data) are shown for the grid:
+
+![Diagram](images/SalesPrediction/training_rmses.png)
 References:
 
 [Bolukbasi et al. 2016] Tolga Bolukbasi and Kai-Wei Chang and James Zou and Venkatesh Saligrama and Adam Kalai. *Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings*. 2016
