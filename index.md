@@ -184,9 +184,10 @@ The tensorflow code creating the model is shown below.
  
  This project deals with forecasting sales for an internet startup based on a given time series. The time series is shown in the following diagram:
  
- ![Diagram](images/SalesPrediction/monthlysales.png)
+ ![Diagram](images/SalesPrediction/monthly_sales.png)
  
- It is clearly visible that the companies sales are clearly dependent on the season 
+ It is clearly visible that the companies sales are clearly dependent on the season. In November and December, Sales are exceptionally high compared to the rest of the year.
+ In order to apply forecasting to this time series, the data first needs to be stationary. This is also indicated by the Dicky-Fuller test, where the null hypothesis is rejected at α = 0.05
  
 References:
 
