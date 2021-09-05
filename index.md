@@ -7,8 +7,8 @@ You can click the project to jump straight to the section.
 
 1. [Deriving Strategic Targets by Analyzing Amazon Customer Reviews](#p1_link) (R, text mining, Word2Vec, topic modeling, LDA)  
 2. [Using Computer Vision and Machine Learning to Identify Material Defects](#p2_link) (Matlab, Image Transformations, CNN, Transfer Learning, One-Class-SVM)
-3. [Solving the Kaggle Titanic Challenge using Tensorflow](#p3_link) (Python, Neural Networks, Tensorflow, Cross Validation)
-4. [Predicting Sales from Time Series Data with Autoregressive Models](#p4_link) (R, Time Series Analysis, ARIMA, Vector Autoregressive Models)
+3. [Predicting Sales from Time Series Data with Autoregressive Models](#p3_link) (R, Time Series Analysis, ARIMA, Grid Search)
+4. [Solving the Kaggle Titanic Challenge using Tensorflow](#p4_link) (Python, Neural Networks, Tensorflow, Cross Validation)
 5. [Project 5](#p5_link) 
 
 
@@ -137,50 +137,7 @@ Using the edge images as inpput proved superior when the data set was still rela
  
 Through combining the early, computer vision based defect detection with the machine learning based approach, the detection is able to flag damaged parts in small series production and improve through machine learning if series become larger.
  
-# <a name="p3_link"></a> Solving the Kaggle Titanic Challenge using Tensorflow
- 
-This is a project I did for fun a few years age: I wanted to use a custom neural network to solve the infamous Kaggle Titanic challenge. The full jupyter notebook is available at [Kaggle Titanic challenge using Tensorflow](https://github.com/YannicP/MachineLearning/blob/master/KaggleTitanic/titanic_survival.ipynb)
- 
-The dataset consists of the records for individual passengers of the titanic and their survival status, found in the respective column.
-
-![Diagram3](images/Titanic/data_table_titanic.png)
- 
-Before the model can be applied, feature engineering and feature selection were performed. To get an idea what score is acceptable, a logistic regression classifier as well as a random forest classifier were trained using the respective scikit-learn functions.
-
-Some very basic data exploration reveals a few interesting insights:
-
-![Diagram3](images/Titanic/titanicexplore.png)
-
-- Women were a lot more likely to survive, and so were kids. It seems like women and children were indeed evacuated with priority.
-- people that payd more, and were passengers in a higher class were more likely to survive.
-
-The Neural Networks structure is as follows:
-1. Input Layer: droput rate 0.2
-2. Hidden Layer 1: ELU activation, L2 regularization (λ = 0.01), dropout rate 0.5 & batch normalization
-3. Hidden Layer 2: ELU activation, L2 regularization (λ = 0.01), dropout rate 0.15 & batch normalization
-
-For initialization, xavier initialization was used.
-The tensorflow code creating the model is shown below.
- ```
- with tf.name_scope("neural_network"):
-    xavier_init = tf.contrib.layers.xavier_initializer()
-    
-    X_drop = tf.layers.dropout(X, dropout_rate_0, training=training)
-    
-    hidden_1 = tf.layers.dense(X_drop, n_hidden_1, kernel_regularizer=tf.contrib.layers.l2_regularizer(0.01), kernel_initializer=xavier_init, name="hidden_1")
-    bn1 = tf.layers.batch_normalization(hidden_1, training=training, momentum=0.9)
-    bn1_act = tf.nn.elu(bn1)
-    hidden_1_drop = tf.layers.dropout(bn1_act, dropout_rate_1, training=training)
-    
-    hidden_2 = tf.layers.dense(hidden_1_drop, n_hidden_2, kernel_regularizer=tf.contrib.layers.l2_regularizer(0.01), kernel_initializer=xavier_init, name="hidden_2")
-    bn2 = tf.layers.batch_normalization(hidden_2, training=training, momentum=0.9)
-    bn2_act = tf.nn.elu(bn2)
-    hidden_2_drop = tf.layers.dropout(bn2_act, dropout_rate_2, training=training)
-    
-    logits = tf.layers.dense(hidden_2_drop, n_outputs, kernel_initializer=xavier_init, name="outputs")
- ```
- 
-# <a name="p4_link"></a> Predicting Sales from Time Series Data with Autoregressive Models
+# <a name="p3_link"></a> Predicting Sales from Time Series Data with Autoregressive Models
  
 This project deals with forecasting sales for an internet startup based on a given time series. The time series is shown in the following diagram:
  
@@ -235,6 +192,50 @@ This further supports the parameter choice.
 The predictions for the log transformed sales for 2012 are shown additionally - it is visible that the general shape is compatible, but some slight differences between prediction and ground truth exist.
 
 ![Diagram](images/SalesPrediction/actual_vs_predsales.png)
+
+# <a name="p4_link"></a> Solving the Kaggle Titanic Challenge using Tensorflow
+ 
+This is a project I did for fun a few years age: I wanted to use a custom neural network to solve the infamous Kaggle Titanic challenge. The full jupyter notebook is available at [Kaggle Titanic challenge using Tensorflow](https://github.com/YannicP/MachineLearning/blob/master/KaggleTitanic/titanic_survival.ipynb)
+ 
+The dataset consists of the records for individual passengers of the titanic and their survival status, found in the respective column.
+
+![Diagram3](images/Titanic/data_table_titanic.png)
+ 
+Before the model can be applied, feature engineering and feature selection were performed. To get an idea what score is acceptable, a logistic regression classifier as well as a random forest classifier were trained using the respective scikit-learn functions.
+
+Some very basic data exploration reveals a few interesting insights:
+
+![Diagram3](images/Titanic/titanicexplore.png)
+
+- Women were a lot more likely to survive, and so were kids. It seems like women and children were indeed evacuated with priority.
+- people that payd more, and were passengers in a higher class were more likely to survive.
+
+The Neural Networks structure is as follows:
+1. Input Layer: droput rate 0.2
+2. Hidden Layer 1: ELU activation, L2 regularization (λ = 0.01), dropout rate 0.5 & batch normalization
+3. Hidden Layer 2: ELU activation, L2 regularization (λ = 0.01), dropout rate 0.15 & batch normalization
+
+For initialization, xavier initialization was used.
+The tensorflow code creating the model is shown below.
+ ```
+ with tf.name_scope("neural_network"):
+    xavier_init = tf.contrib.layers.xavier_initializer()
+    
+    X_drop = tf.layers.dropout(X, dropout_rate_0, training=training)
+    
+    hidden_1 = tf.layers.dense(X_drop, n_hidden_1, kernel_regularizer=tf.contrib.layers.l2_regularizer(0.01), kernel_initializer=xavier_init, name="hidden_1")
+    bn1 = tf.layers.batch_normalization(hidden_1, training=training, momentum=0.9)
+    bn1_act = tf.nn.elu(bn1)
+    hidden_1_drop = tf.layers.dropout(bn1_act, dropout_rate_1, training=training)
+    
+    hidden_2 = tf.layers.dense(hidden_1_drop, n_hidden_2, kernel_regularizer=tf.contrib.layers.l2_regularizer(0.01), kernel_initializer=xavier_init, name="hidden_2")
+    bn2 = tf.layers.batch_normalization(hidden_2, training=training, momentum=0.9)
+    bn2_act = tf.nn.elu(bn2)
+    hidden_2_drop = tf.layers.dropout(bn2_act, dropout_rate_2, training=training)
+    
+    logits = tf.layers.dense(hidden_2_drop, n_outputs, kernel_initializer=xavier_init, name="outputs")
+ ```
+ 
 
 References:
 
