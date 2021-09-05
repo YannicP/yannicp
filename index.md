@@ -186,6 +186,8 @@ The tensorflow code creating the model is shown below.
  
  ![Diagram](images/SalesPrediction/salespermonth.png)
  
+ It is clearly visible that the companies sales are clearly dependent on the season 
+ 
 References:
 
 [Bolukbasi et al. 2016] Tolga Bolukbasi and Kai-Wei Chang and James Zou and Venkatesh Saligrama and Adam Kalai. *Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings*. 2016
