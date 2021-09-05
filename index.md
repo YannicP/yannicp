@@ -216,30 +216,65 @@ The Neural Networks structure is as follows:
 3. Hidden Layer 2: ELU activation, L2 regularization (λ = 0.01), dropout rate 0.15 & batch normalization
 
 For initialization, xavier initialization was used.
-The tensorflow code creating the model is shown below.
+Setting up the network in tensorflow is fairly straightforward:
  ```
  with tf.name_scope("neural_network"):
     xavier_init = tf.contrib.layers.xavier_initializer()
     
     X_drop = tf.layers.dropout(X, dropout_rate_0, training=training)
     
-    hidden_1 = tf.layers.dense(X_drop, n_hidden_1, kernel_regularizer=tf.contrib.layers.l2_regularizer(0.01), kernel_initializer=xavier_init, name="hidden_1")
-    bn1 = tf.layers.batch_normalization(hidden_1, training=training, momentum=0.9)
+    hidden_1 = tf.layers.dense(
+                     X_drop, 
+                     n_hidden_1, 
+                     kernel_regularizer=tf.contrib.layers.l2_regularizer(0.01), 
+                     kernel_initializer=xavier_init, 
+                     name="hidden_1"
+                     )
+    bn1 = tf.layers.batch_normalization(
+                     hidden_1, 
+                     training=training, 
+                     momentum=0.9
+                     )
     bn1_act = tf.nn.elu(bn1)
-    hidden_1_drop = tf.layers.dropout(bn1_act, dropout_rate_1, training=training)
+    hidden_1_drop = tf.layers.dropout(
+                     bn1_act, 
+                     dropout_rate_1, 
+                     training=training
+                     )
     
-    hidden_2 = tf.layers.dense(hidden_1_drop, n_hidden_2, kernel_regularizer=tf.contrib.layers.l2_regularizer(0.01), kernel_initializer=xavier_init, name="hidden_2")
-    bn2 = tf.layers.batch_normalization(hidden_2, training=training, momentum=0.9)
+    hidden_2 = tf.layers.dense(
+                     hidden_1_drop, 
+                     n_hidden_2, 
+                     kernel_regularizer=tf.contrib.layers.l2_regularizer(0.01), 
+                     kernel_initializer=xavier_init, name="hidden_2"
+                     )
+    bn2 = tf.layers.batch_normalization(
+                     hidden_2, 
+                     training=training, 
+                     momentum=0.9
+                     )
     bn2_act = tf.nn.elu(bn2)
-    hidden_2_drop = tf.layers.dropout(bn2_act, dropout_rate_2, training=training)
+    hidden_2_drop = tf.layers.dropout(
+                    bn2_act, 
+                    dropout_rate_2, 
+                    training=training
+                    )
     
-    logits = tf.layers.dense(hidden_2_drop, n_outputs, kernel_initializer=xavier_init, name="outputs")
+    logits = tf.layers.dense(
+                    hidden_2_drop, 
+                    n_outputs, 
+                    kernel_initializer=xavier_init, 
+                    name="outputs"
+                    )
  ```
  The loss funtion used is basig cross entropy, while training is carried out using adaptive moment estimation:
  
  ```
  with tf.name_scope("loss"):
-    xentropy = tf.nn.sigmoid_cross_entropy_with_logits(labels=y, logits=logits)
+    xentropy = tf.nn.sigmoid_cross_entropy_with_logits(
+                    labels=y, 
+                    logits=logits
+                    )
     loss = tf.reduce_mean(xentropy, name="loss") + tf.losses.get_regularization_loss()
     
     
