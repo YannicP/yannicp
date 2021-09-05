@@ -194,7 +194,15 @@ In order to apply forecasting to this time series, the data first needs to be st
 #### Making the Data Stationary
 Through applying the logarithm (which is equal to a Box-Cox-Transform with λ = 0), possible heteroskedacity is removed. This yields a the following time series:
 
-![Diagram](images/SalesPrediction/log_transf.png)
+![Diagram](images/SalesPrediction/log_trans.png)
+
+The data is still not stationary, as there is a trend present (this can also be confirmed by runnning another DF test). Therefore, detrending via differencing is applied:
+
+![Diagram](images/SalesPrediction/log_trans_diff.png)
+
+Following this, the seasonal component is remaining. Taking seasonal differences (with lag=12) is one way to remove this effect. The result (and final stationary time series) looks like this:
+
+![Diagram](images/SalesPrediction/seasonalcorrf.png)
  
 References:
 
