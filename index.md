@@ -1,4 +1,4 @@
-## Yannic's Data Science Portfolio
+## Some of my Projects:
 
 This document gives some insights into some of my past projects, with a focus on variety.
 
@@ -131,15 +131,15 @@ Sometimes, the same workpiece is processed multiple times. If enough data accumu
 
 ![Diagram3](images/DefectDetection/mldefects.png)
 
- Using the edge images as inpput proved superior when the data set was still relatively small. The comparison for using edge images as input vs. using the raw images of the workpieces is shown in the graphs below. Relatively recall was achieved, meaning that most anomalies are found, while precision was still comparatively high, leading to reduced rejects of intact workpieces.
+Using the edge images as inpput proved superior when the data set was still relatively small. The comparison for using edge images as input vs. using the raw images of the workpieces is shown in the graphs below. Relatively recall was achieved, meaning that most anomalies are found, while precision was still comparatively high, leading to reduced rejects of intact workpieces.
  
  ![Diagram3](images/DefectDetection/resultsml.png)
  
- Through combining the early, computer vision based defect detection with the machine learning based approach, the detection is able to flag damaged parts in small series production and improve through machine learning if series become larger.
+Through combining the early, computer vision based defect detection with the machine learning based approach, the detection is able to flag damaged parts in small series production and improve through machine learning if series become larger.
  
 # <a name="p3_link"></a> Solving the Kaggle Titanic Challenge using Tensorflow
  
- This is a project I did for fun a few years age: I wanted to use a custom neural network to solve the infamous Kaggle Titanic challenge. The full jupyter notebook is available at [Kaggle Titanic challenge using Tensorflow](https://github.com/YannicP/MachineLearning/blob/master/KaggleTitanic/titanic_survival.ipynb)
+This is a project I did for fun a few years age: I wanted to use a custom neural network to solve the infamous Kaggle Titanic challenge. The full jupyter notebook is available at [Kaggle Titanic challenge using Tensorflow](https://github.com/YannicP/MachineLearning/blob/master/KaggleTitanic/titanic_survival.ipynb)
  
 The dataset consists of the records for individual passengers of the titanic and their survival status, found in the respective column.
 
@@ -154,10 +154,10 @@ Some very basic data exploration reveals a few interesting insights:
 - Women were a lot more likely to survive, and so were kids. It seems like women and children were indeed evacuated with priority.
 - people that payd more, and were passengers in a higher class were more likely to survive.
 
- The Neural Networks structure is as follows:
- 1. Input Layer: droput rate 0.2
- 2. Hidden Layer 1: ELU activation, L2 regularization (λ = 0.01), dropout rate 0.5 & batch normalization
- 3. Hidden Layer 2: ELU activation, L2 regularization (λ = 0.01), dropout rate 0.15 & batch normalization
+The Neural Networks structure is as follows:
+1. Input Layer: droput rate 0.2
+2. Hidden Layer 1: ELU activation, L2 regularization (λ = 0.01), dropout rate 0.5 & batch normalization
+3. Hidden Layer 2: ELU activation, L2 regularization (λ = 0.01), dropout rate 0.15 & batch normalization
 
 For initialization, xavier initialization was used.
 The tensorflow code creating the model is shown below.
@@ -182,12 +182,14 @@ The tensorflow code creating the model is shown below.
  
 # <a name="p4_link"></a> Predicting Sales from Time Series Data with Autoregressive Models
  
- This project deals with forecasting sales for an internet startup based on a given time series. The time series is shown in the following diagram:
+This project deals with forecasting sales for an internet startup based on a given time series. The time series is shown in the following diagram:
  
- ![Diagram](images/SalesPrediction/monthly_sales.png)
+![Diagram](images/SalesPrediction/monthly_sales.png)
  
- It is clearly visible that the companies sales are clearly dependent on the season. In November and December, Sales are exceptionally high compared to the rest of the year.
- In order to apply forecasting to this time series, the data first needs to be stationary. This is also indicated by the Dicky-Fuller test, where the null hypothesis is rejected at α = 0.05
+It is clearly visible that the companies sales are clearly dependent on the season. In November and December, Sales are exceptionally high compared to the rest of the year.
+In order to apply forecasting to this time series, the data first needs to be stationary. This is also indicated by the Dicky-Fuller test, where the null hypothesis is rejected at α = 0.05
+
+![Diagram](images/SalesPrediction/adftest.png)
  
 References:
 
