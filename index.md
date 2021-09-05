@@ -1,4 +1,4 @@
-## Some of my Projects:
+## Welcome
 
 This document gives some insights into some of my past projects, with a focus on variety.
 
