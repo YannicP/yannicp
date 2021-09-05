@@ -211,6 +211,11 @@ Some very basic data exploration reveals a few interesting insights:
 - people that payd more, and were passengers in a higher class were more likely to survive.
 
 #### Setting up and training a heaviliy regularized Neural Network
+Neural Networks have the disadvantage of overfitting if no countermeasures are taken. Especially when little data is present (as is the case here), they tend to follow the training data too closely, making overfitting a daunting challeng. To combat this, there are various techniques available:
+
+- Regularizing the loss function: Penalizing the loss if the networks weights get too large
+- Using dropout: Deactivating random connections during training does not allow the network to lean on specific features too heavily
+- Early stopping: Stopping training early can lead to better results, as the weights have not yet converged to values that model the training set optimally
 
 The Neural Networks structure is as follows:
 1. Input Layer: droput rate 0.2
@@ -285,6 +290,9 @@ with tf.name_scope("train"):
     training_op = optimizer.minimize(loss)
  ```
  
+ #### Evaluation using 10-fold cross validation
+ 
+To test for generalizability, 10-fold cross validation was implemented. This has the advantage that all of the data available can be used for training afterwards and no skew due to the selection of a specific test set is introduced ( no overfitting the test set)
  Training on ten folds yields the following accuracies:
  
  | Fold  | Training Loss | Validation Loss|
