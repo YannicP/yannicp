@@ -216,6 +216,15 @@ This parameter selection can be achieved by taking a look at the ACF and PACF fu
  
 - To identify a possible value for *p*, one looks at which lag the PACF function (right) first crosses the significance threshold. This is slightly subjective, so here, values of 2 or 4 are possible choices
 - To identify the value for *q*, the same methodology is employed, this time looking at the ACF function. Here, values of 1 (to keep complexity lower) or 2 are possible choices for *q*
+- for the seasonal component, the values *p* and *q* have to be chosen as well. looking at their respective ACF and PACF funtions (not shown here), reveals *p* = 12 (obviously, due to seasonality) and *q* = 0.
+
+Setting up the model with these parameters yield the respective coefficients that tell how the individual values are correlated:
+
+![Diagram](images/SalesPrediction/arimaoutput.png)
+
+Using the model, predictions can be made for the sales: Here, only one year is used for training, while the rest of the timeframe acts as a test set:
+
+![Diagram](images/SalesPrediction/arima_preds.png)
 References:
 
 [Bolukbasi et al. 2016] Tolga Bolukbasi and Kai-Wei Chang and James Zou and Venkatesh Saligrama and Adam Kalai. *Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings*. 2016
