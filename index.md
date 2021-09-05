@@ -190,6 +190,11 @@ It is clearly visible that the companies sales are clearly dependent on the seas
 In order to apply forecasting to this time series, the data first needs to be stationary. This is also indicated by the Dicky-Fuller test, where the null hypothesis is rejected at α = 0.05
 
 ![Diagram](images/SalesPrediction/adftest.png)
+
+#### Making the Data Stationary
+Through applying the logarithm (which is equal to a Box-Cox-Transform with λ = 0), possible heteroskedacity is removed. This yields a the following time series:
+
+![Diagram](images/SalesPrediction/log_transf.png)
  
 References:
 
