@@ -230,6 +230,12 @@ To support the chosen parameters, a grid search was run, using the values from t
 The parameter combinations and the respective RMSE values (This time for the log transformed sales data) are shown for the grid:
 
 ![Diagram](images/SalesPrediction/training_rmses.png)
+
+This further supports the parameter choice.
+The predictions for the log transformed sales for 2012 are shown additionally - it is visible that the general shape is compatible, but some slight differences between prediction and ground truth exist.
+
+![Diagram](images/SalesPrediction/actual_vs_pred.png)
+
 References:
 
 [Bolukbasi et al. 2016] Tolga Bolukbasi and Kai-Wei Chang and James Zou and Venkatesh Saligrama and Adam Kalai. *Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings*. 2016
