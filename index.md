@@ -234,7 +234,7 @@ The parameter combinations and the respective RMSE values (This time for the log
 This further supports the parameter choice.
 The predictions for the log transformed sales for 2012 are shown additionally - it is visible that the general shape is compatible, but some slight differences between prediction and ground truth exist.
 
-![Diagram](images/SalesPrediction/actual_vs_pred.png)
+![Diagram](images/SalesPrediction/actual_vs_predsales.png)
 
 References:
 
