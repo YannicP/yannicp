@@ -223,7 +223,7 @@ The Neural Networks structure is as follows:
 2. Hidden Layer 1: ELU activation, L2 regularization (λ = 0.01), dropout rate 0.5 & batch normalization
 3. Hidden Layer 2: ELU activation, L2 regularization (λ = 0.01), dropout rate 0.15 & batch normalization
 
-For initialization, xavier initialization was used.
+For initialization, Xavier initialization was used.
 Setting up the network in tensorflow is fairly straightforward:
  ```
  with tf.name_scope("neural_network"):
